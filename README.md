@@ -13,7 +13,7 @@
 10. done
 
 
-## Disclaimer:
+## Disclaimer
 
 This project is intended to provide a verified way, but its use may result in device damage or instability. The use of this project is entirely at the user's own risk.
 
