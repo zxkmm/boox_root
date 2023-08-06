@@ -6,11 +6,12 @@
 3. replace `/system/bin/su` with the su file provided in this repo
 4. open supersu and click update su file in popout window
 5. click uninstall other supersu app
-6. delete `/system/xbin/ku.sud` or use shell script if you know how
-7. delete`/system/xbin/sutemp` or use shell script if you know how
-8. open supersu to double check, allow all the things it required
-9. reboot
-10. done
+6. uninstall all installed apps excepy supersu
+7. delete `/system/xbin/ku.sud` or use shell script if you know how
+8. delete`/system/xbin/sutemp` or use shell script if you know how
+9. open supersu to double check, allow all the things it required
+10. reboot
+11. done
 
 
 ## Disclaimer
