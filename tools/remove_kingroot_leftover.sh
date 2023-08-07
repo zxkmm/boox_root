@@ -5,21 +5,43 @@ if [ "$(id -u)" -ne 0 ]; then
   exit 1
 fi
 
-SUTEMP_PATH="/system/xbin/sutemp"
-KUSUD_PATH="/system/xbin/ku.sud"
+static_names_match=(
+  "/system/xbin/sutemp"
+  "/system/xbin/ku.sud"
+  "/system/app/superuser.apk"
+  "/data/data/com.kingroot.RushRoot"
+  "/data/data/com.kingroot.kinguser"
+  "/system/bin/sutemp"
+)
 
-if [ -f "$SUTEMP_PATH" ]; then
-  rm -f "$SUTEMP_PATH"
-  echo "Deleted $SUTEMP_PATH"
-else
-  echo "$SUTEMP_PATH does not exist."
-fi
+for file_path in "${static_names_match[@]}"; do
+  if [ -e "$file_path" ]; then
+    if [ -d "$file_path" ]; then
+      rm -rf "$file_path"
+      echo "Deleted directory: $file_path"
+    else
+      rm -f "$file_path"
+      echo "Deleted file: $file_path"
+    fi
+  else
+    echo "$file_path does not exist."
+  fi
+done
 
-if [ -f "$KUSUD_PATH" ]; then
-  rm -f "$KUSUD_PATH"
-  echo "Deleted $KUSUD_PATH"
-else
-  echo "$KUSUD_PATH does not exist."
-fi
+names_match=(
+  "/data/app/com.kingroot.RushRoot-*.apk"
+  "/data/app-lib/com.kingroot.RushRoot-*"
+)
 
-echo "Script execution completed. https://github.com/zxkmm/boox_root.git"
+for pattern in "${names_match[@]}"; do
+  for file_path in $pattern; do
+    if [ -e "$file_path" ]; then
+      rm -f "$file_path"
+      echo "Deleted: $file_path"
+    else
+      echo "$file_path does not exist or is not a file."
+    fi
+  done
+done
+
+echo "Script execution completed. https://github.com/zxkmm/boox_root"
