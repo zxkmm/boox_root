@@ -1,12 +1,12 @@
 # boox_root
 
 ## Usage
-1. install all app
+1. install all apps
 2. root with patched version of kingroot provided in this repo
 3. replace `/system/bin/su` with the su file provided in this repo, set permission 0755
     if you havn't see su file in /system/bin, in kingroot's root manager, click de-root, and start over step 2
 4. open supersu and click update su file in popout window
-5. click uninstall other supersu app
+5. click uninstall other supersu app if popout window exist
 6. uninstall all installed apps excepy supersu
 7. delete following file or dir, or use the shell script if you know how:
 ```
@@ -17,10 +17,11 @@
     "/data/data/com.kingroot.kinguser"
     "/system/bin/sutemp"
     "/data/app/com.kingroot.RushRoot-*.apk"
-    "/data/app-lib/com.kingroot.RushRoot-*"```
+    "/data/app-lib/com.kingroot.RushRoot-*"
+    ```
 8. open supersu to double check, allow all the things it required
 9. reboot
-10. open supersu, if nothing error pop out, it took over successfully.
+10. open supersu, if nothing error pop out, it took over your su manager successfully.
 11. done
 
 
