@@ -18,7 +18,7 @@
     "/system/bin/sutemp"
     "/data/app/com.kingroot.RushRoot-*.apk"
     "/data/app-lib/com.kingroot.RushRoot-*"
-    ```   
+```   
    
        
 
