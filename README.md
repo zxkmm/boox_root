@@ -18,7 +18,10 @@
     "/system/bin/sutemp"
     "/data/app/com.kingroot.RushRoot-*.apk"
     "/data/app-lib/com.kingroot.RushRoot-*"
-    ```
+    ```   
+   
+       
+
 8. open supersu to double check, allow all the things it required
 9. reboot
 10. open supersu, if nothing error pop out, it took over your su manager successfully.
