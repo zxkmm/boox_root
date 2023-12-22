@@ -7,7 +7,7 @@
     if you havn't see su file in /system/bin, in kingroot's root manager, click de-root, and start over step 2
 4. open supersu and click update su file in popout window
 5. click uninstall other supersu app if popout window exist
-6. uninstall all installed apps excepy supersu
+6. uninstall all installed apps except supersu
 7. delete following file or dir, or use the shell script if you know how:
 ```
     "/system/xbin/sutemp"
